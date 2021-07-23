@@ -103,6 +103,15 @@
   .top {
     height: 900px;
   }
+  .contact_form {
+    width: 60%;
+    margin: 0;
+    padding: 0 20%;
+  }
+  .contact_box {
+    display: flex;
+    margin-bottom: 80px;
+  }
 }
 @media screen and (max-width: 768px) {
   .service_subttl {
@@ -137,6 +146,10 @@
   }
   .contact_texarea {
     width: 80%;
+  }
+  .contact_box {
+    display: block;
+    padding-left: 5px;
   }
 }
 @media screen and (max-width: 768px) {

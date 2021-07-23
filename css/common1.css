@@ -210,8 +210,8 @@ footer {
     display: none;
     top: 0;
     left: 0;
-    z-index: 3;
-    background: #000;
+    z-index: 4;
+    background: rgb(255, 255, 255);
   }
 
   header .navbar ul {

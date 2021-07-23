@@ -6,8 +6,7 @@
   margin-bottom: 50px;
 }
 .intro_txt {
-  padding: 0 auto;
-  text-align: center;
+  padding-left:40%;
 }
 .service_all {
   height: 100%;
@@ -62,17 +61,23 @@
   font-weight: 700;
 }
 @media screen and (max-width: 1024px) {
-  .top {
+  .top_section {
     height: 900px;
+  }
+  .intro_txt {
+    padding-left: 35%;
   }
 }
 @media screen and (max-width: 768px) {
-  .service_subttl {
-    font-size: 20px;
-  }
   .service_img {
     height: 150px;
     width: 150px;
+  }
+  .intro_txt {
+    padding-left: 30%;
+  }
+  .service_subttl {
+    font-size: 15px;
   }
   .top {
     height: 700px;
@@ -88,6 +93,10 @@
     border-radius: 50%;
     height: 80px;
     margin-bottom: 5px;
+  }
+  .top_section {
+    height: 40vh;
+    margin-bottom: 50px;
   }
   .service_subttl {
     font-size: 15px;
