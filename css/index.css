@@ -1,0 +1,313 @@
+.top {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  bottom: 8px;
+}
+.top_bg {
+  width: 100%;
+  height: 80%;
+  background-color: rgb(231, 230, 230);
+}
+
+.top_photo {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.top_photo img {
+  width: 70%;
+  height: 100%;
+  position: flex;
+  float: right;
+  z-index: 2;
+}
+.top_word {
+  color: black;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 3;
+  z-index: 3;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.top_word span {
+  background-color: white;
+  padding: 5px;
+}
+
+/* serviceについて */
+.service {
+  position: relative;
+  margin-bottom: 50px;
+}
+.inner {
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+.intro {
+  margin-bottom: 30px;
+}
+.intro_txt {
+  padding: 0 auto;
+  text-align: center;
+}
+.section_ttl {
+  margin-bottom: 0 auto;
+  font-size: 40px;
+  text-align: center;
+}
+.intro_txt {
+  font-size: 18px;
+}
+.service_all {
+  height: 100%;
+  padding: 0 10%;
+}
+.service_list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.service_list li {
+  float: left;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 20%;
+}
+.service_img_service {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.service_img img {
+  width: 150px;
+  border-radius: 50%;
+  height: 150px;
+  margin-bottom: 15px;
+}
+.service_subttl {
+  font-size: 20px;
+}
+.service_discript {
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .service_list {
+    flex-wrap: wrap;
+  }
+  .service_img img {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+  }
+  .service_list ul {
+    padding-left:  10px;
+  }
+  .service_all ul {
+    height: auto;
+    margin-bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .service_list li {
+    width: 40%;
+    padding: 5%;
+    justify-content: space-between;
+  }
+}
+.btn {
+  background: rgb(255, 255, 255);
+  padding: 20px 30px;
+  border: cornflowerblue;
+  border-radius: 50%;
+  width: 17%;
+  margin: auto;
+  text-align: center;
+}
+
+.btn a {
+  color: #75a9ff;
+  font-size: 15px;
+  font-weight: 700;
+}
+/* aboutについて */
+.about {
+  position: relative;
+  margin-bottom: 100px;
+  padding: 0 10%;
+  background-color: rgb(231, 230, 230);
+}
+.about_txt {
+  width: 40%;
+  padding-left: 20%;
+  padding-top: 5%;
+}
+.about .intro {
+  margin-bottom: 50px;
+}
+.about_list {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.about_item {
+  width: 30%;
+  height: auto;
+  position: relative;
+  left: 15%;
+  z-index: 2;
+  background: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  overflow: hidden;
+}
+
+.about_item::before {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  content: "";
+  z-index: -1;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  background: url(../img/about.png) center/cover no-repeat;
+  -webkit-clip-path: polygon(64% 0, 100% 0, 100% 100%, 47% 100%);
+  clip-path: polygon(64% 0, 100% 0, 100% 100%, 47% 100%);
+}
+
+.about_item:hover::before {
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+.about_sub_txt {
+  padding: 60px 0 0 20px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about_arrow {
+  margin-top: 55px;
+  margin-left: 20px;
+}
+/* newsについて */
+.news {
+  margin-bottom: 20px;
+  padding: 0 10%;
+  height: 400px;
+}
+
+.news .section_ttl {
+  margin-bottom: 50px;
+}
+.news_list {
+  align-items: center;
+  padding: 0 25%;
+}
+.news_list li {
+  border-bottom: 1px solid rgb(175, 173, 173);
+  padding: 10px auto;
+}
+.news_item span {
+  position: relative;
+  padding-left: 5%;
+}
+.news_all {
+  height: 150px;
+}
+
+.news_txt {
+  padding: 0 16px;
+  z-index: 2;
+  color: black;
+}
+
+.news_ttl {
+  margin: 40px 0;
+  font-size: 18px;
+  line-height: 1;
+}
+.btn {
+  text-align: center;
+}
+/* レスポンシブ対応 */
+@media screen and (max-width: 1024px) {
+  .top {
+    height: 900px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service_subttl {
+    font-size: 20px;
+  }
+  .service_img {
+    height: 150px;
+    width: 150px;
+  }
+  .top {
+    height: 700px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .top_section {
+    height: 40vh;
+    margin-bottom: 50px;
+  }
+  .top_bg {
+    width: 100%;
+    height: 100%;
+  }
+  .top_photo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .top_bg h1 {
+    position: absolute;
+    padding-bottom: 50px;
+    font-size: 20px;
+    line-height: 3;
+  }
+  .breadcrumb {
+    position: relative;
+    top: 0;
+  }
+  .about {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .about_item {
+    width: 40%;
+  }
+  .news_list {
+    align-items: center;
+    padding: 0;
+  }
+  .news_list li {
+    font-size: 13px;
+  }
+  .news_ttl {
+    font-size: 13px;
+  }
+  .news {
+    padding: 0 5%;
+  }
+  .btn {
+    width: 70%;
+  }
+  .about_item {
+    left: 5%;
+    width: 40%;
+    height: 60%;
+  }
+  .about_txt {
+    padding-left: 10%;
+  }
+}
